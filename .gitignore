@@ -1,0 +1,22 @@
+# Backups
+*_2026-*.html
+*_2025-*.html
+
+# Docs locales
+*.docx
+*.xlsx
+*.pdf
+
+# Archivos temporales / basura
+*.png.bak
+brave_*.png
+mempalace.yaml
+gen_*.js
+
+# Claude
+.claude/
+
+# HTML de trabajo / experimentos
+indexcoral.html
+index\ viejo\ backup.html
+LatAm\ Intelligence*
