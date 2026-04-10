@@ -118,7 +118,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:999;background:rgba(3,7,12,.97);
 @media(prefers-reduced-motion:reduce){.logo-spin{animation:none;}}
 
 /* ═══════════ HERO ═══════════ */
-#hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 5vw 70px;position:relative;overflow:hidden;background-image:radial-gradient(ellipse 120% 70% at 50% 50%,rgba(4,6,10,.52) 0%,rgba(4,6,10,.84) 100%),linear-gradient(180deg,rgba(4,6,10,.97) 0%,rgba(4,6,10,.70) 25%,rgba(4,6,10,.65) 50%,rgba(4,6,10,.70) 75%,rgba(4,6,10,.97) 100%),url('network-bg.jpg');background-size:cover;background-position:center 40%;}
+#hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 5vw 70px;position:relative;overflow:hidden;background-image:radial-gradient(ellipse 120% 70% at 50% 50%,rgba(4,6,10,.52) 0%,rgba(4,6,10,.84) 100%),linear-gradient(180deg,rgba(4,6,10,.97) 0%,rgba(4,6,10,.70) 25%,rgba(4,6,10,.65) 50%,rgba(4,6,10,.70) 75%,rgba(4,6,10,.97) 100%),url('network-pacific.jpg');background-size:cover;background-position:center 40%;}
 #hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);}
 .hero-eyebrow{font-size:.82rem;letter-spacing:.22em;color:var(--gold);font-weight:700;text-transform:uppercase;margin-bottom:1.6rem;}
 h1.hero-title{font-size:clamp(2.2rem,5.5vw,4.4rem);font-weight:900;line-height:1.1;letter-spacing:-.02em;margin-bottom:1.4rem;}
@@ -231,7 +231,8 @@ h2.section-title em{font-style:normal;color:var(--gold);}
 .report-tagline{font-size:.82rem;color:var(--gold);font-weight:700;letter-spacing:.09em;text-transform:uppercase;margin-bottom:.6rem;display:block;}
 
 /* ═══════════ DEMAND SECTORS ═══════════ */
-#demand{background:var(--card);}
+#demand{background:#08121C;position:relative;overflow:hidden;}
+#demand::before{content:'';position:absolute;inset:0;background-image:url('network-intel.jpg');background-size:cover;background-position:center 55%;opacity:.08;pointer-events:none;}
 .demand-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;}
 .demand-item{background:var(--card2);border:1px solid var(--border);border-radius:12px;padding:1.4rem;display:flex;align-items:center;gap:1rem;transition:border-color .3s;}
 .demand-item:hover{border-color:rgba(245,184,0,.3);}
