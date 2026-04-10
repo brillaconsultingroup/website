@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="es" prefix="og: https://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title data-spa="Inteligencia Brilla | Análisis y Reportes Macroeconómicos LatAm" data-eng="Brilla Intelligence | Macroeconomic Analysis &amp; Reports LatAm">Inteligencia Brilla | Análisis y Reportes Macroeconómicos LatAm</title>
+<meta name="description" content="Análisis y perspectivas sobre minerales críticos, riesgo soberano, mercados de capitales y macroeconomía del Pacífico latinoamericano. PE-grade. Por Brilla Consulting Group.">
+<link rel="canonical" href="https://brilla-group.com/blog.html">
+<link rel="alternate" hreflang="es" href="https://brilla-group.com/blog.html">
+<link rel="alternate" hreflang="en" href="https://brilla-group.com/blog.html">
+<link rel="alternate" hreflang="x-default" href="https://brilla-group.com/blog.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://brilla-group.com/blog.html">
+<meta property="og:title" content="Inteligencia Brilla — Litio, Cobre y Poder">
+<meta property="og:description" content="5 lecciones que redefinen el mapa minero de América Latina. Análisis PE-grade de minerales críticos por Brilla Consulting Group.">
+<meta property="og:image" content="https://brilla-group.com/og-brilla.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index, follow">
+<style>
+:root{
+  --gold:#F5B800;--gold2:#FFD555;--dark:#06101A;--card:#0C1620;--card2:#111D2A;
+  --text:#FFFFFF;--muted:#FFFFFF;--border:rgba(245,184,0,.1);
+  --serif:'Georgia',serif;
+  --article-max:760px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--dark);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;line-height:1.72;overflow-x:hidden;}
+
+/* ═══ NETWORK BAND ═══ */
+.network-band{height:240px;position:relative;overflow:hidden;background-image:url('network-bg.jpg');background-size:cover;background-position:center 40%;}
+.network-band::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,var(--dark) 0%,rgba(4,6,10,.82) 28%,rgba(4,6,10,.82) 72%,var(--dark) 100%);}
+.network-band-inner{position:relative;z-index:1;height:100%;display:flex;align-items:center;justify-content:center;}
+.network-band-text{font-size:.75rem;font-weight:700;letter-spacing:.3em;color:var(--gold);text-transform:uppercase;}
+/* ═══ SCROLLBAR ═══ */
+::-webkit-scrollbar{width:4px;}
+::-webkit-scrollbar-track{background:#04090F;}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:2px;}
+
+/* ═══ NAV ═══ */
+nav{position:fixed;top:0;left:0;right:0;z-index:999;background:rgba(3,7,12,.97);backdrop-filter:blur(14px);border-bottom:1px solid rgba(245,184,0,.1);height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
+.nav-wordmark{line-height:1.1;}
+.nav-wordmark .top{font-size:.82rem;letter-spacing:.22em;color:var(--gold);font-weight:800;text-transform:uppercase;}
+.nav-wordmark .bot{font-size:.82rem;letter-spacing:.14em;color:#FFFFFF;text-transform:uppercase;}
+.nav-links{display:flex;list-style:none;gap:1.8rem;}
+.nav-links a{color:#FFFFFF;text-decoration:none;font-size:.82rem;letter-spacing:.05em;text-transform:uppercase;transition:color .2s;}
+.nav-links a:hover,.nav-links a.active{color:var(--gold);}
+.nav-right{display:flex;align-items:center;gap:.8rem;}
+.lang-sw{display:flex;align-items:center;gap:4px;}
+.lang-btn{display:flex;align-items:center;gap:5px;padding:4px 10px;border:1px solid rgba(255,255,255,.22);border-radius:6px;background:rgba(255,255,255,.08);color:#CCCCCC;font-size:.82rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;cursor:pointer;transition:all .15s;line-height:1;}
+.lang-btn:hover:not(.lang-active){background:rgba(255,255,255,.14);color:#FFFFFF;border-color:rgba(255,255,255,.38);}
+.lang-btn.lang-active{background:var(--gold);color:#000;border-color:var(--gold);}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;}
+.hamburger span{display:block;width:22px;height:2px;background:#CCCCCC;border-radius:2px;transition:.3s;}
+@media(max-width:780px){
+  .nav-links{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;background:rgba(3,7,12,.99);padding:1.4rem 5vw;gap:.9rem;border-bottom:1px solid rgba(245,184,0,.1);}
+  .nav-links.open{display:flex;}
+  .hamburger{display:flex;}
+}
+.logo-img{display:block;}
+
+/* ═══ BLOG HERO ═══ */
+.blog-hero{
+  padding:110px 5vw 56px;
+  position:relative;overflow:hidden;
+  background-image:url('network-bg.jpg');
+  background-size:cover;background-position:center 50%;
+  border-bottom:1px solid rgba(245,184,0,.14);
+}
+.blog-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,8,8,.82) 0%,rgba(8,8,8,.64) 60%,rgba(8,8,8,.90) 100%);}
+.blog-hero-inner{position:relative;z-index:1;max-width:900px;margin:0 auto;}
+.blog-hero-eyebrow{font-size:.82rem;letter-spacing:.22em;color:var(--gold);font-weight:700;text-transform:uppercase;margin-bottom:.9rem;display:flex;align-items:center;gap:.6rem;}
+.blog-hero-eyebrow::before{content:'';display:inline-block;width:22px;height:1.5px;background:var(--gold);}
+.blog-hero h1{font-size:clamp(1.8rem,4vw,3rem);font-weight:900;line-height:1.12;letter-spacing:-.02em;margin-bottom:.7rem;}
+.blog-hero p{font-size:.95rem;color:#CCCCCC;max-width:560px;}
+
+/* ═══ MAIN LAYOUT ═══ */
+.blog-main{max-width:1100px;margin:0 auto;padding:4rem 5vw 5rem;display:grid;grid-template-columns:1fr 320px;gap:4rem;align-items:start;}
+@media(max-width:900px){.blog-main{grid-template-columns:1fr;gap:3rem;}}
+@media(min-width:1024px){.blog-main{padding:3.5rem 5vw 4.5rem;}}
+
+/* ═══ ARTICLE ═══ */
+article{min-width:0;}
+.article-meta{display:flex;align-items:center;flex-wrap:wrap;gap:.6rem;margin-bottom:1.8rem;}
+.art-cat{display:inline-block;background:rgba(245,184,0,.12);color:var(--gold);border-radius:20px;padding:4px 13px;font-size:.82rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;}
+.art-date{font-size:.82rem;color:#CCCCCC;letter-spacing:.04em;}
+.art-author{font-size:.82rem;color:#CCCCCC;}
+.art-author strong{color:#FFFFFF;}
+.art-dot{color:#444;font-size:.7rem;}
+
+.article-title{font-family:var(--serif);font-size:clamp(1.7rem,3.5vw,2.6rem);font-weight:700;line-height:1.18;letter-spacing:-.015em;margin-bottom:.6rem;}
+.article-title em{font-style:normal;color:var(--gold);}
+.article-subtitle{font-size:clamp(1rem,2vw,1.2rem);color:#CCCCCC;line-height:1.5;margin-bottom:2rem;font-weight:400;}
+.article-divider{width:52px;height:2px;background:var(--gold);margin-bottom:2.2rem;border-radius:1px;}
+
+/* Body text */
+.article-body{font-size:1.02rem;line-height:1.82;color:#FFFFFF;}
+.article-body p{margin-bottom:1.5rem;}
+.article-body strong{color:#FFFFFF;font-weight:700;}
+.article-body em{color:var(--gold);font-style:normal;}
+
+/* Lesson sections */
+.lesson{margin:2.6rem 0;}
+.lesson-label{font-size:.82rem;font-weight:900;color:var(--gold);letter-spacing:.18em;text-transform:uppercase;margin-bottom:.5rem;display:flex;align-items:center;gap:.5rem;}
+.lesson-label::before{content:'';display:inline-block;width:14px;height:1.5px;background:var(--gold);}
+.lesson h2{font-family:var(--serif);font-size:clamp(1.1rem,2.2vw,1.45rem);font-weight:700;color:#FFFFFF;line-height:1.3;margin-bottom:1rem;letter-spacing:-.01em;}
+
+/* Pullquote */
+.pullquote{
+  border-left:3px solid var(--gold);
+  padding:1.2rem 1.6rem;
+  margin:2rem 0;
+  background:rgba(245,184,0,.04);
+  border-radius:0 10px 10px 0;
+}
+.pullquote p{font-family:var(--serif);font-size:1.12rem;font-style:italic;color:#FFFFFF;line-height:1.6;margin:0;}
+.pullquote p::before{content:'"';color:var(--gold);font-size:1.4rem;line-height:0;vertical-align:-0.3em;margin-right:.15em;}
+.pullquote p::after{content:'"';color:var(--gold);font-size:1.4rem;line-height:0;vertical-align:-0.3em;margin-left:.15em;}
+
+/* Article images */
+.article-img-block{margin:2.4rem 0;}
+.article-img-block img{width:100%;height:auto;border-radius:12px;display:block;border:1px solid #1e1e1e;}
+.article-img-caption{font-size:.82rem;color:#CCCCCC;margin-top:.7rem;line-height:1.5;padding:0 .2rem;}
+
+/* CTA box */
+.article-cta{
+  background:linear-gradient(135deg,#111100,#0d0d0d);
+  border:1px solid rgba(245,184,0,.22);
+  border-radius:14px;
+  padding:1.8rem 2rem;
+  margin:2.8rem 0 0;
+  display:flex;align-items:center;justify-content:space-between;gap:1.4rem;flex-wrap:wrap;
+}
+.article-cta p{font-size:.9rem;color:#FFFFFF;line-height:1.5;margin:0;}
+.article-cta p strong{color:var(--gold);}
+.btn-gold{background:var(--gold);color:#000;padding:11px 26px;border-radius:28px;font-weight:800;text-decoration:none;font-size:.85rem;letter-spacing:.04em;transition:transform .2s,box-shadow .2s;white-space:nowrap;flex-shrink:0;}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 6px 22px rgba(245,184,0,.3);}
+
+/* Article footer */
+.article-footer{margin-top:2.4rem;padding-top:1.4rem;border-top:1px solid #1a1a1a;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;}
+.article-tags{display:flex;flex-wrap:wrap;gap:.5rem;}
+.atag{background:#161616;border:1px solid #262626;border-radius:20px;padding:3px 11px;font-size:.82rem;color:#CCCCCC;}
+.article-share{font-size:.82rem;color:#CCCCCC;}
+.article-share a{color:var(--gold);text-decoration:none;font-weight:700;}
+.article-share a:hover{text-decoration:underline;}
+
+/* ═══ SIDEBAR ═══ */
+.blog-sidebar{position:sticky;top:82px;}
+.sidebar-block{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.6rem;margin-bottom:1.4rem;}
+.sidebar-title{font-size:.75rem;letter-spacing:.2em;color:var(--gold);font-weight:700;text-transform:uppercase;margin-bottom:1.2rem;}
+.sidebar-about p{font-size:.84rem;color:#FFFFFF;line-height:1.72;}
+.sidebar-products{display:flex;flex-direction:column;gap:.7rem;}
+.sp-item{padding:.8rem 1rem;background:var(--card2);border:1px solid #1e1e1e;border-radius:10px;text-decoration:none;display:block;transition:border-color .2s;}
+.sp-item:hover{border-color:rgba(245,184,0,.3);}
+.sp-name{font-size:.85rem;font-weight:700;color:#FFFFFF;display:block;margin-bottom:.2rem;}
+.sp-price{font-size:.82rem;color:var(--gold);font-weight:700;}
+.sidebar-cta{text-align:center;}
+.sidebar-cta p{font-size:.84rem;color:#FFFFFF;line-height:1.6;margin-bottom:1rem;}
+.btn-outline{display:inline-block;border:1.5px solid rgba(245,184,0,.5);color:var(--gold);padding:10px 22px;border-radius:28px;font-weight:600;text-decoration:none;font-size:.85rem;transition:all .2s;}
+.btn-outline:hover{border-color:var(--gold);background:rgba(245,184,0,.06);}
+
+/* ═══ MORE ARTICLES ═══ */
+.more-section{border-top:1px solid var(--border);padding-top:2.2rem;margin-top:1rem;}
+.more-title{font-size:.75rem;letter-spacing:.2em;color:var(--gold);font-weight:700;text-transform:uppercase;margin-bottom:1.4rem;}
+.more-coming{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.4rem;text-align:center;}
+.more-coming p{font-size:.88rem;color:#CCCCCC;line-height:1.6;}
+.more-coming a{color:var(--gold);font-weight:700;text-decoration:none;}
+.more-coming a:hover{text-decoration:underline;}
+
+/* ═══ FOOTER ═══ */
+footer{background:#030810;border-top:1px solid rgba(245,184,0,.15);padding:3rem 5vw 2rem;position:relative;overflow:hidden;}
+footer::before{content:'';position:absolute;inset:0;background-image:url('network-bg.jpg');background-size:cover;background-position:center;opacity:.04;pointer-events:none;}
+.footer-inner{max-width:1100px;margin:0 auto;position:relative;}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;padding-top:1.6rem;border-top:1px solid rgba(255,255,255,.06);}
+.footer-copy{font-size:.82rem;color:#FFFFFF;}
+.footer-copy strong{color:#FFFFFF;}
+.footer-slogan{font-size:.82rem;color:var(--gold);font-weight:700;letter-spacing:.1em;text-transform:uppercase;}
+.back-top{color:var(--gold);text-decoration:none;font-size:.82rem;font-weight:700;}
+.back-top:hover{text-decoration:underline;}
+
+/* ═══ LANG VISIBILITY ═══ */
+[data-lang]{display:none;}
+[data-lang].active{display:block;}
+.il{display:none;}
+.il.active{display:inline;}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;}}
+</style>
+</head>
+<body>
+
+<!-- ══════════════════ NAV ══════════════════ -->
+<nav>
+  <a class="nav-logo" href="index.html">
+    <img src="logo.png" width="34" height="34" alt="Brilla Consulting Group" class="logo-img">
+    <div class="nav-wordmark"><div class="top">Brilla CONSULTING Group</div><div class="bot">Reports · Dashboards · Studies</div></div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html#services"><span class="il active" data-nav="spa">Servicios</span><span class="il" data-nav="eng">Services</span></a></li>
+    <li><a href="index.html#team"><span class="il active" data-nav="spa">Equipo</span><span class="il" data-nav="eng">Team</span></a></li>
+    <li><a href="reportes.html"><span class="il active" data-nav="spa">Reportes</span><span class="il" data-nav="eng">Reports</span></a></li>
+    <li><a href="index.html#studies"><span class="il active" data-nav="spa">Estudios</span><span class="il" data-nav="eng">Studies</span></a></li>
+    <li><a href="blog.html" class="active">Blog</a></li>
+    <li><a href="index.html#faq">FAQ</a></li>
+    <li><a href="index.html#contact"><span class="il active" data-nav="spa">Contacto</span><span class="il" data-nav="eng">Contact</span></a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-sw">
+      <button class="lang-btn lang-active" id="btn-spa" onclick="setLang('spa')" aria-pressed="true"><svg width="16" height="12" viewBox="0 0 18 13" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="border-radius:1px;flex-shrink:0"><rect width="18" height="13" fill="#c60b1e"/><rect y="3" width="18" height="7" fill="#ffc400"/></svg> ES</button>
+      <button class="lang-btn" id="btn-eng" onclick="setLang('eng')" aria-pressed="false"><svg width="16" height="12" viewBox="0 0 18 13" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="border-radius:1px;flex-shrink:0"><rect width="18" height="13" fill="#B22234"/><rect y="1" width="18" height="1" fill="#fff"/><rect y="3" width="18" height="1" fill="#fff"/><rect y="5" width="18" height="1" fill="#fff"/><rect y="7" width="18" height="1" fill="#fff"/><rect y="9" width="18" height="1" fill="#fff"/><rect y="11" width="18" height="1" fill="#fff"/><rect width="7" height="7" fill="#3C3B6E"/></svg> EN</button>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ══════════════════ BLOG HERO ══════════════════ -->
+<header class="blog-hero">
+  <div class="blog-hero-inner">
+    <div class="blog-hero-eyebrow">
+      <span class="il active" data-nav="spa">Inteligencia Brilla</span>
+      <span class="il" data-nav="eng">Brilla Intelligence</span>
+    </div>
+    <h1>
+      <span class="il active" data-nav="spa">Análisis. Perspectiva.<br><em style="color:var(--gold)">Decisiones informadas.</em></span>
+      <span class="il" data-nav="eng">Analysis. Perspective.<br><em style="color:var(--gold)">Informed decisions.</em></span>
+    </h1>
+    <p>
+      <span class="il active" data-nav="spa">Minerales críticos, riesgo soberano, mercados de capitales y macroeconomía del Pacífico latinoamericano.</span>
+      <span class="il" data-nav="eng">Critical minerals, sovereign risk, capital markets and macroeconomics across Latin America's Pacific Basin.</span>
+    </p>
+  </div>
+</header>
+
+<!-- ══════════════════ MAIN ══════════════════ -->
+<div class="blog-main">
+
+  <!-- ══ ARTICLE ══ -->
+  <main>
+
+    <!-- ═ ARTICLE 1 ═ -->
+    <article id="litio-cobre-poder">
+
+      <!-- ES VERSION -->
+      <div data-lang="spa" class="active">
+        <div class="article-meta">
+          <span class="art-cat">Minerales Críticos</span>
+          <span class="art-dot">·</span>
+          <span class="art-date">08 dic 2025</span>
+          <span class="art-dot">·</span>
+          <span class="art-author"><strong>Brilla Consulting Group</strong></span>
+        </div>
+        <h1 class="article-title">Litio, Cobre y Poder</h1>
+        <p class="article-subtitle">5 Lecciones que Redefinen el Mapa Minero de América Latina</p>
+        <div class="article-divider"></div>
+        <div class="article-body">
+          <p>América Latina es considerada un pilar fundamental para la llamada transición energética global, albergando aproximadamente el <strong>35% del litio y el 40% del cobre</strong> del mundo. Esta posición central, sin embargo, no está exenta de complejidades. ¿Por qué la vasta riqueza geológica de la región no siempre se traduce en éxito productivo? La respuesta reside en el concepto de <em>riesgo político-contingente</em>: el valor de un activo geológico depende directamente del marco normativo que lo rodea.</p>
+          <p>El futuro de los minerales críticos no es solo un juego de reservas, sino un complejo tablero de políticas, estrategias de inversión y gestión de riesgos. A continuación, exploramos cinco lecciones que revelan esta nueva realidad y definen quiénes serán los verdaderos ganadores en la carrera por los metales del futuro.</p>
+
+          <!-- Image 1 -->
+          <div class="article-img-block">
+            <img src="lithium%20reserves%20critical%20minerals.png" alt="Top 5 países por reservas de litio — Bolivia, Chile, Argentina, Brasil, Perú (kt)" loading="lazy">
+            <p class="article-img-caption">Top 5 países por reservas conocidas de litio (kilotoneladas). Bolivia lidera con 23,000 kt, pero su producción efectiva es marginal. Fuente: análisis Brilla Consulting Group.</p>
+          </div>
+
+          <div class="lesson">
+            <div class="lesson-label">Lección 1</div>
+            <h2>La Paradoja de la Abundancia: Por qué las Reservas Más Grandes del Mundo Están Dormidas</h2>
+            <p>Bolivia posee las mayores reservas de litio del planeta, cuantificadas en unas impresionantes <strong>23,000 kt</strong>. Sin embargo, esta cifra monumental contrasta drásticamente con su capacidad de producción, que es marginal en un mercado regional que, concentrado en Chile y Argentina, supera las 80,000 toneladas anuales. Este desfase no es casualidad; se debe a una compleja combinación de factores de <em>política, tecnología y economía</em> que dificultan la escalabilidad de sus proyectos.</p>
+            <p>El caso boliviano es la demostración más clara de que tener el recurso no es suficiente. Para los inversores, es una lección de que el riesgo sobre el terreno —político y de ejecución— supera el potencial geológico, haciendo que los activos en jurisdicciones con menor potencial pero mayor previsibilidad sean más atractivos.</p>
+          </div>
+
+          <div class="lesson">
+            <div class="lesson-label">Lección 2</div>
+            <h2>La Regla de Oro: La Inversión Sigue a la Previsibilidad, no Solo al Mineral</h2>
+            <p>En el extremo opuesto del espectro boliviano, Argentina demuestra cómo una dirección regulatoria favorable puede despertar el capital y acelerar la producción, incluso con reservas considerablemente menores. En el sector de minerales críticos, la <em>dirección regulatoria</em> se ha vuelto un factor tan decisivo como la geología.</p>
+            <p>El sector de litio argentino, con una tasa de crecimiento anual compuesto del <strong>21%</strong>, es el mejor ejemplo. Este dinamismo responde directamente a una estrategia de <em>aceleración por incentivos</em>, como el Régimen de Incentivo para Grandes Inversiones (RIGI), que es un caso de prueba para la <em>estabilidad fiscal y marcos de exportación</em>. Dicho régimen ha apuntalado el desarrollo de proyectos clave como Hombre Muerto West y Sal de Vida de Allkem.</p>
+            <div class="pullquote">
+              <p>La oferta escalará donde haya previsibilidad regulatoria, no sólo riqueza geológica.</p>
+            </div>
+            <p>Esta realidad confirma para los inversores que la continuidad de las políticas es el indicador más fiable del crecimiento futuro de la capacidad productiva.</p>
+          </div>
+
+          <!-- Image 2 -->
+          <div class="article-img-block">
+            <img src="mining%20timeline%20critical%20minerals%20report.jpg" alt="Timeline de proyectos mineros clave en América Latina 2024–2027" loading="lazy">
+            <p class="article-img-caption">Cronograma de proyectos mineros estratégicos en la región, 2024–2027. Proyectos en etapas de producción, construcción, expansión y planificación. Fuente: análisis Brilla Consulting Group.</p>
+          </div>
+
+          <div class="lesson">
+            <div class="lesson-label">Lección 3</div>
+            <h2>Ni Nacionalización Total ni Mercado Abierto: El Ascenso del Modelo Híbrido Chileno</h2>
+            <p>Frente a los extremos de la nacionalización total y la apertura sin restricciones, emerge un nuevo modelo pragmático: la <em>soberanía híbrida</em>. Chile es el pionero de este enfoque con el emblemático acuerdo entre la estatal Codelco y la privada SQM en el Salar de Atacama. Este pacto establece una empresa conjunta (JV) que comenzará a operar en 2025 y se extenderá hasta 2060.</p>
+            <p>El atractivo de este esquema es su aparente equilibrio: permite al Estado capturar una parte significativa de las rentas y mantener el control estratégico sobre un recurso vital, sin renunciar a la eficiencia operativa, el capital y la experiencia técnica que aporta el sector privado.</p>
+          </div>
+
+          <div class="lesson">
+            <div class="lesson-label">Lección 4</div>
+            <h2>El Sello Verde: Cómo los Criterios ASG se Convirtieron en un Requisito para la Financiación</h2>
+            <p>El cumplimiento de los criterios Ambientales, Sociales y de Gobernanza (ASG) ha dejado de ser un complemento opcional para convertirse en una <em>estrategia de inversión central</em>. Brasil lo demuestra con su impulso en el sector del níquel, donde busca alcanzar una cuota regional de aproximadamente el <strong>16.6%</strong> para 2030 combinando su riqueza en recursos con iniciativas ASG y de trazabilidad.</p>
+            <p>Hoy, la conformidad con los estándares ASG y las condiciones de seguridad son factores que <em>definen la bancabilidad</em> de un proyecto. Esta estrategia no solo mitiga el riesgo reputacional, sino que desbloquea el acceso a <em>financiamiento verde</em> y capital de fondos que operan bajo mandatos ASG estrictos, convirtiendo el cumplimiento en una ventaja competitiva directa.</p>
+          </div>
+
+          <div class="lesson">
+            <div class="lesson-label">Lección 5</div>
+            <h2>El Estado como Socio: La Nacionalización en México No Cerró Todas las Puertas</h2>
+            <p>Mientras Chile opta por un modelo de socio estratégico, México presenta otra faceta del <em>nacionalismo de recursos</em>, donde el Estado actúa como operador principal pero deja la puerta abierta a la inversión privada bajo condiciones estrictamente definidas. La reciente reforma minera mexicana reforzó el control estatal sobre el litio, pero la realidad es más matizada que un cierre total.</p>
+            <p>El proyecto Sonora, con un objetivo de producir aproximadamente <strong>35,000 toneladas anuales para 2027</strong>, es el ejemplo claro: aunque el operador es la estatal LitioMx, el marco legal permite el desarrollo privado a través de modelos JV. Este enfoque demuestra que el rol del sector privado no es eliminado, sino que pasa a depender de las prioridades y condiciones establecidas por el Estado.</p>
+          </div>
+
+          <div class="lesson">
+            <div class="lesson-label">Conclusión</div>
+            <h2>La Geología es Solo el Punto de Partida</h2>
+            <p>En el competitivo mercado de minerales críticos de América Latina, la gobernanza, la estrategia regulatoria y la capacidad de adaptación a nuevos paradigmas —como los modelos híbridos y el cumplimiento ASG— son los verdaderos diferenciadores del éxito. Con una demanda global que podría alcanzar un valor de aproximadamente <strong>$770 mil millones para 2040</strong> (IEA), lo que está en juego es inmenso.</p>
+            <p>En este contexto, la pregunta estratégica para los inversores no es dónde se encuentra el mineral, sino <em>dónde la inteligencia política y la previsibilidad regulatoria desbloquearán su valor</em>. ¿Qué países o territorios demostrarán tener ambas para encabezar la próxima década de la transición energética?</p>
+          </div>
+
+          <div class="article-cta">
+            <p><strong>Reporte completo — 41 páginas.</strong> Disponible para inversores institucionales, consultoras de grandes fondos y family offices.</p>
+            <a href="mailto:staff@brilla-group.com?subject=Critical%20Minerals%20Report" class="btn-gold">Solicitar reporte →</a>
+          </div>
+        </div>
+
+        <div class="article-footer">
+          <div class="article-tags">
+            <span class="atag">Litio</span>
+            <span class="atag">Cobre</span>
+            <span class="atag">Minerales Críticos</span>
+            <span class="atag">LatAm</span>
+            <span class="atag">Riesgo Político</span>
+          </div>
+          <div class="article-share">
+            <a href="mailto:?subject=Litio%2C%20Cobre%20y%20Poder%20—%20Brilla%20Consulting&body=https://brilla-group.com/blog.html">Compartir por email ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- EN VERSION -->
+      <div data-lang="eng">
+        <div class="article-meta">
+          <span class="art-cat">Critical Minerals</span>
+          <span class="art-dot">·</span>
+          <span class="art-date">Dec 08, 2025</span>
+          <span class="art-dot">·</span>
+          <span class="art-author"><strong>Brilla Consulting Group</strong></span>
+        </div>
+        <h1 class="article-title">Lithium, Copper and Power</h1>
+        <p class="article-subtitle">5 Lessons Redefining Latin America's Mining Map</p>
+        <div class="article-divider"></div>
+        <div class="article-body">
+          <p>Latin America is widely regarded as a cornerstone of the global energy transition, holding approximately <strong>35% of the world's lithium and 40% of its copper</strong>. Yet this central position is not without complexity. Why does the region's vast geological wealth so rarely translate into productive success? The answer lies in the concept of <em>political-contingent risk</em>: the value of a geological asset depends directly on the regulatory framework surrounding it.</p>
+          <p>The future of critical minerals is not simply a game of reserves — it is a complex chessboard of policies, investment strategies, and risk management. Below, we explore five lessons that reveal this new reality and define who will emerge as the true winners in the race for the metals of the future.</p>
+
+          <!-- Image 1 -->
+          <div class="article-img-block">
+            <img src="lithium%20reserves%20critical%20minerals.png" alt="Top 5 countries by lithium reserves — Bolivia, Chile, Argentina, Brazil, Peru (kt)" loading="lazy">
+            <p class="article-img-caption">Top 5 countries by known lithium reserves (kilotonnes). Bolivia leads with 23,000 kt, yet its effective production remains marginal. Source: Brilla Consulting Group analysis.</p>
+          </div>
+
+          <div class="lesson">
+            <div class="lesson-label">Lesson 1</div>
+            <h2>The Abundance Paradox: Why the World's Largest Reserves Lie Dormant</h2>
+            <p>Bolivia holds the planet's largest lithium reserves, an impressive <strong>23,000 kt</strong>. Yet this monumental figure contrasts sharply with its actual production capacity, which is marginal in a regional market dominated by Chile and Argentina, exceeding 80,000 tonnes annually. This gap is no accident — it stems from a complex combination of <em>political, technological and economic</em> factors that impede project scalability.</p>
+            <p>The Bolivian case is the clearest demonstration that having the resource is not enough. For investors, it is a lesson that on-the-ground risk — political and execution-related — outweighs geological potential, making assets in lower-potential but higher-predictability jurisdictions more attractive.</p>
+          </div>
+
+          <div class="lesson">
+            <div class="lesson-label">Lesson 2</div>
+            <h2>The Golden Rule: Investment Follows Predictability, Not Just the Mineral</h2>
+            <p>At the opposite end of the Bolivian spectrum, Argentina demonstrates how a favorable regulatory direction can awaken capital and accelerate production, even with considerably smaller reserves. In the critical minerals sector, <em>regulatory direction</em> has become as decisive a factor as geology itself.</p>
+            <p>Argentina's lithium sector, with a compound annual growth rate of <strong>21%</strong>, is the best example. This dynamism responds directly to an <em>incentive-driven acceleration</em> strategy, embodied by the Large Investment Incentive Regime (RIGI) — a test case for <em>fiscal stability and export frameworks</em>. This regime has underpinned the development of key projects such as Hombre Muerto West and Allkem's Sal de Vida.</p>
+            <div class="pullquote">
+              <p>Supply will scale where there is regulatory predictability, not just geological wealth.</p>
+            </div>
+            <p>This reality confirms for investors that policy continuity is the most reliable indicator of future productive capacity growth.</p>
+          </div>
+
+          <!-- Image 2 -->
+          <div class="article-img-block">
+            <img src="mining%20timeline%20critical%20minerals%20report.jpg" alt="Key mining projects timeline in Latin America 2024–2027" loading="lazy">
+            <p class="article-img-caption">Timeline of strategic mining projects across the region, 2024–2027. Projects spanning production, construction, expansion, and planning stages. Source: Brilla Consulting Group analysis.</p>
+          </div>
+
+          <div class="lesson">
+            <div class="lesson-label">Lesson 3</div>
+            <h2>Neither Full Nationalization nor Open Market: The Rise of Chile's Hybrid Model</h2>
+            <p>Between the extremes of full nationalization and unrestricted openness, a new pragmatic model is emerging: <em>hybrid sovereignty</em>. Chile pioneered this approach with the landmark agreement between state-owned Codelco and private SQM at the Salar de Atacama — a joint venture set to operate from 2025 through 2060.</p>
+            <p>The appeal of this structure lies in its balance: it allows the state to capture a significant share of rents and maintain strategic control over a vital resource, while retaining the operational efficiency, capital, and technical expertise that the private sector brings.</p>
+          </div>
+
+          <div class="lesson">
+            <div class="lesson-label">Lesson 4</div>
+            <h2>The Green Seal: How ESG Criteria Became a Financing Requirement</h2>
+            <p>Compliance with Environmental, Social and Governance (ESG) criteria has ceased to be an optional add-on and become a <em>central investment strategy</em>. Brazil demonstrates this in its nickel sector, where it aims to reach a regional share of approximately <strong>16.6%</strong> by 2030 by combining its resource wealth with ESG and traceability initiatives.</p>
+            <p>Today, ESG standards and safety conditions are factors that <em>define a project's bankability</em>. This strategy not only mitigates reputational risk — it unlocks access to <em>green financing</em> and capital from funds operating under strict ESG mandates, turning compliance into a direct competitive advantage.</p>
+          </div>
+
+          <div class="lesson">
+            <div class="lesson-label">Lesson 5</div>
+            <h2>The State as Partner: Mexico's Nationalization Did Not Close Every Door</h2>
+            <p>While Chile opts for a strategic partnership with shared control, Mexico presents another facet of <em>resource nationalism</em>, where the state acts as the primary operator but leaves the door open to private investment under strictly defined conditions. Mexico's recent mining reform reinforced state control over lithium, but the reality is more nuanced than a total closure.</p>
+            <p>The Sonora project, targeting approximately <strong>35,000 tonnes annually by 2027</strong>, is the clear example: although the operator is state-owned LitioMx, the legal framework allows private development through JV models. This approach shows that the private sector's role is not eliminated — it is redefined by state priorities and conditions.</p>
+          </div>
+
+          <div class="lesson">
+            <div class="lesson-label">Conclusion</div>
+            <h2>Geology Is Only the Starting Point</h2>
+            <p>In Latin America's competitive critical minerals market, governance, regulatory strategy, and the ability to adapt to new paradigms — hybrid models, ESG compliance — are the true differentiators of success. With global demand potentially reaching approximately <strong>$770 billion by 2040</strong> (IEA), the stakes are enormous.</p>
+            <p>In this context, the strategic question for investors is not where the mineral lies, but <em>where political intelligence and regulatory predictability will unlock its value</em>. Which countries or territories will prove to have both to lead the next decade of the energy transition?</p>
+          </div>
+
+          <div class="article-cta">
+            <p><strong>Full report — 41 pages.</strong> Available for institutional investors, major fund consultancies, and family offices.</p>
+            <a href="mailto:staff@brilla-group.com?subject=Critical%20Minerals%20Report" class="btn-gold">Request report →</a>
+          </div>
+        </div>
+
+        <div class="article-footer">
+          <div class="article-tags">
+            <span class="atag">Lithium</span>
+            <span class="atag">Copper</span>
+            <span class="atag">Critical Minerals</span>
+            <span class="atag">LatAm</span>
+            <span class="atag">Political Risk</span>
+          </div>
+          <div class="article-share">
+            <a href="mailto:?subject=Lithium%2C%20Copper%20and%20Power%20—%20Brilla%20Consulting&body=https://brilla-group.com/blog.html">Share by email ↗</a>
+          </div>
+        </div>
+      </div>
+
+    </article>
+    <!-- ═ / ARTICLE 1 ═ -->
+
+    <!-- MORE ARTICLES PLACEHOLDER -->
+    <div class="more-section">
+      <div class="more-title">
+        <span class="il active" data-nav="spa">Más artículos</span>
+        <span class="il" data-nav="eng">More articles</span>
+      </div>
+      <div class="more-coming">
+        <p>
+          <span class="il active" data-nav="spa">Nuevos análisis próximamente. Para recibir alertas de publicación, escríbenos a <a href="mailto:staff@brilla-group.com">staff@brilla-group.com</a></span>
+          <span class="il" data-nav="eng">New analyses coming soon. To receive publication alerts, write to us at <a href="mailto:staff@brilla-group.com">staff@brilla-group.com</a></span>
+        </p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ══ SIDEBAR ══ -->
+  <aside class="blog-sidebar">
+
+    <div class="sidebar-block sidebar-about">
+      <div class="sidebar-title">
+        <span class="il active" data-nav="spa">Sobre Brilla</span>
+        <span class="il" data-nav="eng">About Brilla</span>
+      </div>
+      <p>
+        <span class="il active" data-nav="spa">Inteligencia macroeconómica PE-grade para inversores institucionales, family offices y corporaciones con exposición en Chile, Ecuador, Perú y Colombia.</span>
+        <span class="il" data-nav="eng">PE-grade macroeconomic intelligence for institutional investors, family offices and corporations with exposure in Chile, Ecuador, Peru and Colombia.</span>
+      </p>
+    </div>
+
+    <div class="sidebar-block">
+      <div class="sidebar-title">
+        <span class="il active" data-nav="spa">Reportes disponibles</span>
+        <span class="il" data-nav="eng">Available reports</span>
+      </div>
+      <div class="sidebar-products">
+        <a href="reportes.html" class="sp-item">
+          <span class="sp-name">Pacific Basin Matrix 2025–2027</span>
+          <span class="sp-price">USD 14,500</span>
+        </a>
+        <a href="reportes.html" class="sp-item">
+          <span class="sp-name">Critical Minerals Regulatory Outlook</span>
+          <span class="sp-price">USD 6,200</span>
+        </a>
+        <a href="reportes.html" class="sp-item">
+          <span class="sp-name">
+            <span class="il active" data-nav="spa">Macro Cuenca del Pacífico 2026</span>
+            <span class="il" data-nav="eng">Pacific Basin Macro Report 2026</span>
+          </span>
+          <span class="sp-price">USD 3,800</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="sidebar-block sidebar-cta">
+      <div class="sidebar-title">
+        <span class="il active" data-nav="spa">Lo más caro es no planear</span>
+        <span class="il" data-nav="eng">The costliest move is no plan</span>
+      </div>
+      <p>
+        <span class="il active" data-nav="spa">Reportes, dashboards y estudios ad hoc para su próxima decisión de inversión.</span>
+        <span class="il" data-nav="eng">Reports, dashboards and bespoke studies for your next investment decision.</span>
+      </p>
+      <a href="mailto:staff@brilla-group.com" class="btn-outline">
+        <span class="il active" data-nav="spa">Conversemos →</span>
+        <span class="il" data-nav="eng">Let's talk →</span>
+      </a>
+    </div>
+
+  </aside>
+
+</div>
+
+<div class="network-band"><div class="network-band-inner"><span class="network-band-text">Transforming vision into returns</span></div></div>
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 <strong>Brilla Consulting Group</strong> · brilla-group.com</p>
+      <span class="footer-slogan">Transforming vision into returns</span>
+      <a href="#" class="back-top">
+        <span class="il active" data-nav="spa">↑ Inicio</span>
+        <span class="il" data-nav="eng">↑ Top</span>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+let lang='spa';
+function setLang(l){
+  lang=l;
+  document.querySelectorAll('[data-lang]').forEach(el=>el.classList.toggle('active',el.dataset.lang===l));
+  document.querySelectorAll('[data-nav]').forEach(el=>el.classList.toggle('active',el.dataset.nav===l));
+  var bs=document.getElementById('btn-spa'),be=document.getElementById('btn-eng');
+  if(bs){bs.classList.toggle('lang-active',l==='spa');bs.setAttribute('aria-pressed',String(l==='spa'));}
+  if(be){be.classList.toggle('lang-active',l==='eng');be.setAttribute('aria-pressed',String(l==='eng'));}
+  document.documentElement.setAttribute('lang',l==='spa'?'es':'en');
+  try{localStorage.setItem('brilla_lang',l);}catch(e){}
+}
+(function(){try{var s=localStorage.getItem('brilla_lang');if(s==='eng')setLang('eng');}catch(e){}})();
+function toggleMenu(){document.getElementById('navLinks').classList.toggle('open');}
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navLinks').classList.remove('open')));
+</script>
+</body>
+</html>
