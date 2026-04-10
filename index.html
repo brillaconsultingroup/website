@@ -283,6 +283,13 @@ h2.section-title em{font-style:normal;color:var(--gold);}
 .contact-left p{color:var(--muted);font-size:.97rem;line-height:1.8;margin-bottom:1.6rem;}
 .contact-email{display:inline-flex;align-items:center;gap:.6rem;color:var(--gold);font-size:1.05rem;font-weight:700;text-decoration:none;border-bottom:1.5px solid rgba(245,184,0,.25);padding-bottom:3px;transition:border-color .2s;}
 .contact-email:hover{border-color:var(--gold);}
+.contact-wa{display:inline-flex;align-items:center;gap:.55rem;color:#FFFFFF;font-size:.95rem;font-weight:600;text-decoration:none;border-bottom:1.5px solid rgba(255,255,255,.15);padding-bottom:3px;transition:border-color .2s;margin-top:.9rem;}
+.contact-wa:hover{border-color:rgba(245,184,0,.5);}
+.contact-wa svg{width:15px;height:15px;fill:#FFFFFF;flex-shrink:0;}
+/* ── WhatsApp FAB ── */
+#wa-fab{position:fixed;bottom:1.6rem;right:1.6rem;z-index:997;display:flex;align-items:center;gap:.5rem;background:var(--card2);border:1px solid rgba(245,184,0,.28);border-radius:50px;padding:.62rem 1.15rem;text-decoration:none;color:#FFFFFF;font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;box-shadow:0 4px 22px rgba(0,0,0,.6);transition:border-color .25s,box-shadow .25s,transform .2s;}
+#wa-fab:hover{border-color:rgba(245,184,0,.6);box-shadow:0 6px 30px rgba(245,184,0,.1);transform:translateY(-2px);}
+#wa-fab svg{width:17px;height:17px;fill:#FFFFFF;flex-shrink:0;}
 .contact-right{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:2.2rem;}
 .contact-right h3{font-size:1rem;font-weight:700;color:#FFFFFF;margin-bottom:1.4rem;}
 .contact-options{display:flex;flex-direction:column;gap:.9rem;}
@@ -763,7 +770,8 @@ footer::before{content:'';position:absolute;inset:0;background-image:url('networ
           <h2>¿Listo para <em style="color:var(--gold);font-style:normal;">decidir mejor</em>?</h2>
           <div class="divider"></div>
           <p>Cuéntanos tu desafío. Nuestro equipo responde en menos de 24 horas con una propuesta preliminar sin compromiso. Cada consulta es tratada con total confidencialidad desde el primer mensaje.</p>
-          <a class="contact-email" href="mailto:staff@brilla-group.com">📧staff@brilla-group.com</a>
+          <a class="contact-email _oe" href="#">📧 <span class="_ed"></span></a><br>
+          <a class="contact-wa _ow" href="#" target="_blank" rel="noopener" data-wm="Hola Brilla, quisiera información sobre sus reportes y servicios."><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>WhatsApp directo</a>
         </div>
         <div class="contact-right">
           <h3>¿Qué necesitas?</h3>
@@ -784,7 +792,8 @@ footer::before{content:'';position:absolute;inset:0;background-image:url('networ
           <h2>Ready to <em style="color:var(--gold);font-style:normal;">decide smarter</em>?</h2>
           <div class="divider"></div>
           <p>Tell us your challenge. Our team responds within 24 hours with a no-commitment preliminary proposal. Every inquiry is treated with full confidentiality from the first message.</p>
-          <a class="contact-email" href="mailto:contact@brilla-group.com">📧 contact@brilla-group.com</a>
+          <a class="contact-email _oe" href="#">📧 <span class="_ed"></span></a><br>
+          <a class="contact-wa _ow" href="#" target="_blank" rel="noopener" data-wm="Hello Brilla, I would like information about your reports and services."><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>WhatsApp direct</a>
         </div>
         <div class="contact-right">
           <h3>What do you need?</h3>
@@ -893,7 +902,21 @@ function faq(btn){
 </script>
 
 
+<!-- WhatsApp FAB -->
+<a id="wa-fab" href="#" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  WhatsApp
+</a>
 <script>
+(function(){
+  var e=atob('c3RhZmZAYnJpbGxhLWdyb3VwLmNvbQ==');
+  var w=atob('NTkzOTYwNTM0MDAz');
+  document.querySelectorAll('._ed').forEach(function(el){el.textContent=e;});
+  document.querySelectorAll('._oe').forEach(function(a){var s=a.dataset.s||'';a.href='mailto:'+e+(s?'?subject='+s:'');});
+  document.querySelectorAll('._ow').forEach(function(a){var m=a.dataset.wm||'';a.href='https://wa.me/'+w+(m?'?text='+encodeURIComponent(m):'');});
+  var fab=document.getElementById('wa-fab');
+  if(fab)fab.href='https://wa.me/'+w+'?text='+encodeURIComponent('Hola Brilla, quisiera información sobre sus reportes y servicios.');
+})();
 (async function fetchLive(){
   try{
     const r=await fetch('https://api.frankfurter.app/latest?from=USD&to=CLP,PEN,COP',{cache:'no-cache'});
@@ -903,9 +926,7 @@ function faq(btn){
     document.getElementById('lv-pen').textContent=d.rates.PEN.toFixed(3);
     document.getElementById('lv-cop').textContent=Math.round(d.rates.COP).toLocaleString('es');
     document.getElementById('lv-src').textContent='ECB · '+d.date;
-  }catch(e){
-    document.getElementById('lv-src').textContent='ECB · sin conexión';
-  }
+  }catch(e){document.getElementById('lv-src').textContent='ECB · sin conexión';}
 })();
 </script>
 </body></html>
