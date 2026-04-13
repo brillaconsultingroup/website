@@ -1,0 +1,8 @@
+# Brilla Consulting Group — Security Contact
+# RFC 9116 — https://securitytxt.org
+
+Contact: mailto:staff@brilla-group.com
+Expires: 2027-04-13T00:00:00.000Z
+Preferred-Languages: en, es
+Canonical: https://brilla-group.com/.well-known/security.txt
+Policy: https://brilla-group.com/privacy.html

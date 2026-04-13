@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pacific Basin Matrix — Q2 2026 Preview | Brilla Consulting Group</title>
+  <meta name="description" content="Five high-margin Pacific Basin opportunities with 30–55% EBITDA potential. Q2 2026 preview from Brilla Consulting Group.">
+  <meta property="og:title" content="Pacific Basin Matrix Q2 2026 — Preview">
+  <meta property="og:description" content="Proprietary intelligence on five converging Pacific Basin opportunities. EBITDA margins of 30–55%. Limited preview from Brilla Consulting Group.">
+  <meta property="og:image" content="https://brillaconsultingroup.github.io/website/network-pacific.jpg">
+  <meta property="og:url" content="https://brilla-group.com/pacific-basin-preview.html">
+  <style>
+    :root {
+      --gold: #F5B800;
+      --gold2: #FFD555;
+      --dark: #080808;
+      --card: #0C1018;
+      --border: rgba(245,184,0,.12);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; }
+    body {
+      background: var(--dark);
+      color: #FFFFFF;
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* ── HEADER ── */
+    .site-header {
+      padding: 18px 32px;
+      border-bottom: 1px solid #161616;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .logo { font-size: 1.1rem; font-weight: 700; color: var(--gold); text-decoration: none; letter-spacing: .07em; }
+    .site-header nav { margin-left: auto; display: flex; gap: 24px; }
+    .site-header nav a { color: #CCCCCC; text-decoration: none; font-size: .88rem; }
+    .site-header nav a:hover { color: var(--gold); }
+
+    /* ── HERO ── */
+    .hero {
+      padding: 64px 32px 52px;
+      max-width: 920px;
+      margin: 0 auto;
+      border-bottom: 1px solid #111;
+    }
+    .report-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #111;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 5px 12px;
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 24px;
+    }
+    .report-badge .dot {
+      width: 6px; height: 6px;
+      background: var(--gold);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
+
+    h1 {
+      font-size: clamp(1.9rem, 4.5vw, 3rem);
+      font-weight: 700;
+      line-height: 1.15;
+      color: #FFFFFF;
+      margin-bottom: 10px;
+    }
+    h1 span { color: var(--gold); }
+    .subtitle {
+      font-size: clamp(1rem, 2.2vw, 1.2rem);
+      color: #CCCCCC;
+      max-width: 640px;
+      margin-bottom: 32px;
+      line-height: 1.7;
+    }
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      font-size: .82rem;
+      color: #AAAAAA;
+      border-top: 1px solid #161616;
+      padding-top: 18px;
+    }
+    .meta-row strong { color: #FFFFFF; }
+
+    /* ── THESIS ── */
+    .thesis {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 32px;
+      border-bottom: 1px solid #111;
+    }
+    .section-label {
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 14px;
+    }
+    .thesis-text {
+      font-size: clamp(1rem, 2vw, 1.15rem);
+      color: #EEEEEE;
+      line-height: 1.8;
+      max-width: 780px;
+    }
+    .thesis-text strong { color: #FFFFFF; }
+
+    /* ── TRIGGERS ── */
+    .triggers {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 32px;
+      border-bottom: 1px solid #111;
+    }
+    .trigger-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 20px;
+    }
+    .trigger-item {
+      background: var(--card);
+      border: 1px solid #161616;
+      border-top: 2px solid var(--gold);
+      padding: 18px 20px;
+      border-radius: 0 0 4px 4px;
+    }
+    .trigger-date {
+      font-size: .75rem;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .trigger-item p {
+      font-size: .88rem;
+      color: #CCCCCC;
+      line-height: 1.55;
+    }
+    .trigger-item strong { color: #FFFFFF; }
+
+    /* ── OPPORTUNITIES ── */
+    .opps {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 32px;
+      border-bottom: 1px solid #111;
+    }
+    .opp-card {
+      background: var(--card);
+      border: 1px solid #161616;
+      border-radius: 4px;
+      padding: 28px 28px 24px;
+      margin-bottom: 16px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 20px;
+      align-items: start;
+    }
+    .opp-card:last-child { margin-bottom: 0; }
+    .opp-header { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+    .opp-country {
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      background: #111;
+      border: 1px solid var(--border);
+      padding: 3px 10px;
+      border-radius: 2px;
+    }
+    .opp-sector {
+      font-size: .82rem;
+      color: #AAAAAA;
+    }
+    .opp-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+    .opp-body {
+      font-size: .88rem;
+      color: #CCCCCC;
+      line-height: 1.65;
+      max-width: 560px;
+    }
+    .opp-body strong { color: #FFFFFF; }
+    .opp-metrics {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      min-width: 140px;
+      text-align: right;
+    }
+    .metric { }
+    .metric-val {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .metric-label {
+      font-size: .72rem;
+      color: #AAAAAA;
+      letter-spacing: .06em;
+      margin-top: 2px;
+    }
+    .redacted {
+      background: #1A1A1A;
+      border-radius: 2px;
+      color: #1A1A1A;
+      font-size: .82rem;
+      padding: 2px 8px;
+      user-select: none;
+      display: inline-block;
+      margin-top: 4px;
+    }
+    .opp-redact-note {
+      font-size: .75rem;
+      color: #666;
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    /* ── WHAT'S INSIDE ── */
+    .inside {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 32px;
+      border-bottom: 1px solid #111;
+    }
+    .inside-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .inside-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 14px 16px;
+      background: var(--card);
+      border: 1px solid #161616;
+      border-radius: 4px;
+    }
+    .inside-icon { color: var(--gold); font-size: 1rem; flex-shrink: 0; margin-top: 1px; }
+    .inside-item p { font-size: .86rem; color: #CCCCCC; line-height: 1.5; }
+    .inside-item strong { color: #FFFFFF; }
+
+    /* ── CTA ── */
+    .cta-section {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 48px 32px 64px;
+    }
+    .cta-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 36px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .cta-left h2 {
+      font-size: 1.4rem;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+    .cta-left p {
+      font-size: .9rem;
+      color: #CCCCCC;
+      max-width: 420px;
+      line-height: 1.6;
+    }
+    .cta-right { display: flex; flex-direction: column; gap: 12px; align-items: flex-end; }
+    .price-tag {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .price-note { font-size: .78rem; color: #AAAAAA; text-align: right; }
+    .btn-primary {
+      background: var(--gold);
+      color: #080808;
+      font-weight: 700;
+      font-size: .92rem;
+      padding: 13px 28px;
+      border-radius: 3px;
+      text-decoration: none;
+      letter-spacing: .03em;
+      display: inline-block;
+      transition: background .2s;
+    }
+    .btn-primary:hover { background: var(--gold2); }
+    .btn-secondary {
+      color: #CCCCCC;
+      font-size: .84rem;
+      text-decoration: none;
+      text-align: center;
+    }
+    .btn-secondary:hover { color: var(--gold); }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid #111;
+      padding: 24px 32px;
+      max-width: 920px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    footer p { font-size: .8rem; color: #666; }
+    .footer-legal { display: flex; gap: 16px; }
+    .footer-legal a { font-size: .8rem; color: #666; text-decoration: none; }
+    .footer-legal a:hover { color: var(--gold); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 700px) {
+      .site-header { padding: 16px 20px; }
+      .hero, .thesis, .triggers, .opps, .inside, .cta-section { padding-left: 20px; padding-right: 20px; }
+      .trigger-grid { grid-template-columns: 1fr; }
+      .opp-card { grid-template-columns: 1fr; }
+      .opp-metrics { flex-direction: row; text-align: left; min-width: auto; }
+      .inside-grid { grid-template-columns: 1fr; }
+      .cta-box { padding: 28px 24px; }
+      .cta-right { align-items: flex-start; }
+      footer { flex-direction: column; align-items: flex-start; }
+    }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="/" class="logo">BRILLA</a>
+    <nav>
+      <a href="/reportes.html">All Reports</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="report-badge">
+      <span class="dot"></span>
+      Preview — Q2 2026
+    </div>
+    <h1>Pacific Basin<br><span>High-Margin Matrix</span></h1>
+    <p class="subtitle">Five converging opportunities across Chile, Ecuador, Peru, and Colombia — with documented EBITDA margins between 30% and 55%. This preview discloses the investment thesis and key triggers. Underlying opportunity data, entry structures, and risk quantification are exclusive to full report purchasers.</p>
+    <div class="meta-row">
+      <span><strong>Coverage:</strong> Chile · Ecuador · Peru · Colombia</span>
+      <span><strong>Sectors:</strong> Critical Minerals · Mining · Agro · Tourism · Energy</span>
+      <span><strong>Published:</strong> Q2 2026</span>
+      <span><strong>Format:</strong> 66-page PDF + Data Annex</span>
+    </div>
+  </section>
+
+  <!-- THESIS -->
+  <section class="thesis">
+    <p class="section-label">Investment Thesis</p>
+    <p class="thesis-text">The Pacific Basin is entering a structural inflection point. <strong>Three simultaneous shifts</strong> — the EU's hard mandate on non-China critical mineral supply chains, Latin America's mining code modernization cycle, and post-pandemic premium consumer demand — are creating a narrow entry window across five sectors where <strong>informed first-movers can access 30–55% EBITDA margins</strong> unavailable in mature markets. The window is Q2–Q4 2026. Regulatory and capacity constraints close most of these opportunities by 2027.</p>
+  </section>
+
+  <!-- Q2 TRIGGERS -->
+  <section class="triggers">
+    <p class="section-label">Q2 2026 Catalysts</p>
+    <div class="trigger-grid">
+      <div class="trigger-item">
+        <p class="trigger-date">EU Mandate · Active</p>
+        <p><strong>EU Battery Regulation 2023/1542</strong> requires 70% recycled content by 2030. OEM procurement teams are under board-level pressure to lock non-China lithium hydroxide supply <strong>now</strong>, before spot markets price in the mandate.</p>
+      </div>
+      <div class="trigger-item">
+        <p class="trigger-date">Ecuador · Q4 2024</p>
+        <p>Ecuador's <strong>Constitutional Court upheld foreign ownership rights</strong> in mining concessions and the 2024 Mining Code opened 180,000 hectares for foreign capital — the largest regulatory unlock in the Andes in a decade.</p>
+      </div>
+      <div class="trigger-item">
+        <p class="trigger-date">Colombia · Q1 2024</p>
+        <p>La Guajira's <strong>230kV transmission line to Cartagena went live Q1 2024</strong>, activating one of the Western Hemisphere's best renewable resource zones. The grid bottleneck that blocked development for 8 years is resolved.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPPORTUNITIES (3 of 5 disclosed) -->
+  <section class="opps">
+    <p class="section-label">Selected Opportunities — 3 of 5 Disclosed</p>
+
+    <div class="opp-card">
+      <div>
+        <div class="opp-header">
+          <span class="opp-country">Chile</span>
+          <span class="opp-sector">Critical Minerals · Downstream</span>
+        </div>
+        <p class="opp-title">Lithium Hydroxide Vertical Integration</p>
+        <p class="opp-body">Chile controls <strong>52% of global lithium reserves</strong> with production costs at $3,800/ton — 60% below Australian rivals. The margin arbitrage lies in downstream vertical integration: spodumene concentrate to battery-grade lithium hydroxide. Asian and European OEMs are actively bidding for non-China supply chain contracts, paying a <strong>documented premium over spot</strong>. Entry requires 14–18 months for environmental permitting under Chile's Mining Code, which offers 10-year price stability agreements. <strong>Break-even aligns with EU mandate activation</strong> — a structural, not cyclical, demand driver.</p>
+        <p class="opp-redact-note">Specific concession targets, partner structures, and offtake term sheets disclosed in full report.</p>
+      </div>
+      <div class="opp-metrics">
+        <div class="metric">
+          <div class="metric-val">50%</div>
+          <div class="metric-label">EBITDA Margin</div>
+        </div>
+        <div class="metric">
+          <div class="metric-val">$450M</div>
+          <div class="metric-label">CAPEX Required</div>
+        </div>
+        <div class="metric">
+          <div class="metric-val">2026</div>
+          <div class="metric-label">Break-Even</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="opp-card">
+      <div>
+        <div class="opp-header">
+          <span class="opp-country">Ecuador</span>
+          <span class="opp-sector">Mining · Consolidation Play</span>
+        </div>
+        <p class="opp-title">Artisanal-to-Industrial Gold Transition</p>
+        <p class="opp-body">Ecuador holds <strong>6.2M oz of gold reserves</strong> with formal production at just 15% of potential — the largest structural gap in the Andes. Copper grades average 0.85%, 25% above global median. The value is not in greenfield exploration: it is in <strong>acquiring and centralizing the 65% of small deposits controlled by artisanal miners</strong> who lack capital for environmental compliance and modern processing. A $120M consolidation play across 12 medium-grade concessions delivers 45% EBITDA by integrating operators into centralized milling. <strong>Export logistics advantage</strong>: Quito–Miami direct freight cuts transit to 48 hours vs. 14 days from DRC.</p>
+        <p class="opp-redact-note">Concession registry, acquisition model, and community revenue-sharing structure in full report.</p>
+      </div>
+      <div class="opp-metrics">
+        <div class="metric">
+          <div class="metric-val">45%</div>
+          <div class="metric-label">EBITDA Margin</div>
+        </div>
+        <div class="metric">
+          <div class="metric-val">$120M</div>
+          <div class="metric-label">Acquisition Model</div>
+        </div>
+        <div class="metric">
+          <div class="metric-val">18mo</div>
+          <div class="metric-label">Payback</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="opp-card">
+      <div>
+        <div class="opp-header">
+          <span class="opp-country">Colombia</span>
+          <span class="opp-sector">Energy · Renewables</span>
+        </div>
+        <p class="opp-title">La Guajira 200MW Wind-Solar-Battery Park</p>
+        <p class="opp-body">La Guajira offers <strong>2,800 kWh/m²/year solar irradiance and 8.5 m/s average wind speeds</strong> — top-quartile globally. Colombia's 70% hydro dependence creates systematic price spikes during El Niño years, providing a built-in arbitrage mechanism beyond the base PPA. Three concurrent revenue streams: 15-year PPA at $0.055/kWh fixed, spot market upside during drought cycles at $0.12+/kWh, and <strong>carbon credits at $22/ton CO2e for 1.2M tons/year abatement</strong>. CBAM implications create an additional buyer premium for European industrial importers sourcing Colombian materials. Grid connection is already live.</p>
+        <p class="opp-redact-note">PPA counterparty, land concession structure, and CREG regulatory scenario analysis in full report.</p>
+      </div>
+      <div class="opp-metrics">
+        <div class="metric">
+          <div class="metric-val">55%</div>
+          <div class="metric-label">EBITDA Margin</div>
+        </div>
+        <div class="metric">
+          <div class="metric-val">$320M</div>
+          <div class="metric-label">CAPEX</div>
+        </div>
+        <div class="metric">
+          <div class="metric-val">6yr</div>
+          <div class="metric-label">Payback</div>
+        </div>
+      </div>
+    </div>
+
+    <p style="font-size:.82rem;color:#666;margin-top:16px;">Two additional opportunities — Peru superfoods value chain (30% EBITDA) and Ecuador Galapagos premium ecotourism (50% EBITDA) — are documented exclusively in the full report.</p>
+  </section>
+
+  <!-- WHAT'S INSIDE -->
+  <section class="inside">
+    <p class="section-label">Full Report — 66 Pages</p>
+    <div class="inside-grid">
+      <div class="inside-item">
+        <span class="inside-icon">◆</span>
+        <p><strong>Concession-level opportunity maps</strong> — specific assets, registry numbers, and current ownership structures for each opportunity</p>
+      </div>
+      <div class="inside-item">
+        <span class="inside-icon">◆</span>
+        <p><strong>EBITDA build models</strong> — full sensitivity analysis across commodity price, FX, and capacity utilization scenarios</p>
+      </div>
+      <div class="inside-item">
+        <span class="inside-icon">◆</span>
+        <p><strong>Regulatory risk quantification</strong> — permit timelines, legal precedent, and political risk scores by jurisdiction</p>
+      </div>
+      <div class="inside-item">
+        <span class="inside-icon">◆</span>
+        <p><strong>Entry structure options</strong> — JV templates, acquisition models, and offtake term sheet frameworks by opportunity</p>
+      </div>
+      <div class="inside-item">
+        <span class="inside-icon">◆</span>
+        <p><strong>Competitive positioning</strong> — which global players are already positioned, and where the white space remains</p>
+      </div>
+      <div class="inside-item">
+        <span class="inside-icon">◆</span>
+        <p><strong>CBAM and EU regulatory alignment</strong> — how each opportunity maps to incoming European supply chain mandates</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-box">
+      <div class="cta-left">
+        <h2>Acquire the Full Report</h2>
+        <p>Single-entity license. Delivered as a 66-page PDF with data annex within 24 hours of payment confirmation. Price locks at publication — no subscription, no recurring fees.</p>
+      </div>
+      <div class="cta-right">
+        <div>
+          <div class="price-tag">$14,500</div>
+          <div class="price-note">Single-entity license · USD · Wire transfer</div>
+        </div>
+        <a href="/#contact" class="btn-primary">Request Access →</a>
+        <a href="/#contact" class="btn-secondary">Institutional pricing available</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Brilla Consulting Group · This preview is for informational purposes only and does not constitute investment advice. <a href="/disclaimer.html" style="color:#666">Full disclaimer.</a></p>
+    <nav class="footer-legal">
+      <a href="/privacy.html">Privacy</a>
+      <a href="/terms.html">Terms</a>
+      <a href="/disclaimer.html">Disclaimer</a>
+    </nav>
+  </footer>
+
+</body>
+</html>
